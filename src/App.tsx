@@ -761,16 +761,21 @@ function Footer() {
           <p className="text-ivory/30 text-xs">
             © {new Date().getFullYear()} Praktek Dokter Gigi Jizel Zarra. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            {['Home', 'Services', 'Location'].map((link) => (
-              <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
-                className="text-ivory/30 text-xs hover:text-gold transition-colors"
-              >
-                {link}
-              </a>
-            ))}
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+            <div className="flex gap-6">
+              {['Home', 'Services', 'Location'].map((link) => (
+                <a
+                  key={link}
+                  href={`#${link.toLowerCase()}`}
+                  className="text-ivory/30 text-xs hover:text-gold transition-colors"
+                >
+                  {link}
+                </a>
+              ))}
+            </div>
+            <a href="https://nakamadigital.biz.id/" target="_blank" rel="noopener noreferrer" className="text-ivory/30 text-xs hover:text-gold transition-colors">
+              Website by Nakama Digital
+            </a>
           </div>
         </div>
       </div>
